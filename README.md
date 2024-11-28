@@ -25,7 +25,7 @@ Welcome to **My_Simple_Portfolio**, a personal website designed to showcase my s
 
 ## Live Demo 🌍
 
-Explore the portfolio live here: [My_Simple_Portfolio](https://github.com/SergeyReizman/My_Simple_Portfolio.git)
+Explore the portfolio live here: [My_Simple_Portfolio](https://my-simple-portfolio-sergey.netlify.app/)
 
 ## Sections Breakdown 📝
 
