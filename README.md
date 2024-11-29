@@ -56,3 +56,89 @@ If you'd like to explore or modify the project locally:
 1. Clone the repository:
    ```bash
    git clone https://github.com/SergeyReizman/My_Simple_Portfolio.git
+
+Project Specification Document
+Project Name: My Simple Portfolio
+Version: 1.1
+Author: Sergey Reizman
+Date: November 2024
+1. Overview
+Objective:
+- Create a personal portfolio website showcasing my skills, projects, and contact information as a Full Stack Developer.
+Purpose:
+-Build a professional online presence.
+-Highlight technical expertise and projects.
+-Facilitate communication with potential employers or collaborators.
+Target Audience:
+-Recruiters, potential employers, and collaborators in the tech industry.
+2. Features
+Responsive Design:
+-Fully optimized for desktop, tablet, and mobile devices.
+Sections:
+-About: Brief introduction and professional summary.
+-Skills: Highlights of technical proficiencies.
+-Projects: Showcase of key projects with descriptions and live/demo links.
+-Contact: Contact details with email and GitHub links.
+Navigation:
+-Smooth scrolling and intuitive navigation.
+Accessibility:
+-Fully WCAG-compliant, including:
+     -High-contrast color schemes.
+     -ARIA roles for screen readers.
+     -Keyboard navigation support.
+Future Features:
+-Blog section for updates.
+-Downloadable PDF resume.
+-Interactive skill progress bars.
+3. Technologies Used
+Frontend:
+-HTML5, CSS3: For structure and styling.
+-JavaScript: For interactivity.
+-Bootstrap, jQuery: For responsive layout and dynamic elements.
+Deployment:
+-Netlify: For hosting with automatic GitHub integration.
+-HTTPS: Ensuring secure communication.
+4. Project Workflow
+Planning:
+-Define layout and content structure.
+-Identify target audience needs.
+Development:
+-Design and build using HTML, CSS, and JavaScript.
+-Ensure mobile responsiveness and accessibility.
+Testing:
+-Cross-browser testing using tools like BrowserStack.
+-Conduct usability testing with peers or mentors.
+-Use Google Lighthouse to measure responsiveness, performance, and accessibility.
+Deployment:
+-Host and configure on Netlify.
+-Implement continuous deployment linked to GitHub.
+5. Visual Mockups
+Wireframes:
+-Appendix with layout designs for mobile, tablet, and desktop views.
+6. Deliverables
+-Fully functional portfolio website.
+-Repository on GitHub with detailed documentation.
+-Live deployment on Netlify.
+7. Success Criteria
+-Professional Design: Visually appealing and consistent.
+-Seamless User Experience: Properly displayed content on all devices.
+-Performance Metrics:
+     -Bounce Rate: Less than 40%.
+     -Page Load Time: Under 3 seconds.
+     -Google Lighthouse Scores:
+          -Accessibility: 95% or above.
+          -Performance: 90% or above.
+          -Best Practices: 95% or above.
+-Cross-Browser Compatibility: Consistent experience across major browsers (Chrome, Firefox, Safari, Edge).
+8. Deployment Details
+-Version Control: Follow GitFlow for branch management.
+-Continuous Deployment: Automated builds triggered by GitHub pushes.
+9. Links
+Repository Link:
+https://github.com/SergeyReizman/My_Simple_Portfolio
+Live Website:
+My Simple Portfolio on Netlify
+https://my-simple-portfolio-sergey.netlify.app/
+10. Appendix
+-Visual Mockups: Mobile, tablet, and desktop wireframes included.
+-Testing Tools: BrowserStack and Google Lighthouse report examples.
