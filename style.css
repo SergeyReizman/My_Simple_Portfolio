@@ -1,86 +1,99 @@
 /* Global Styles */
+/* Sets universal font family, removes default margins and paddings, and standardizes line height for readability */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-  }
-  
-  /* Header */
-  header {
-    background: #333;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-  }
-  
-  header h1 {
-    margin: 0;
-    font-size: 2.5em;
-  }
-  
-  /* Navigation */
-  nav ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    padding: 10px;
-    background: #444;
-  }
-  
-  nav ul li {
-    margin: 0 15px;
-  }
-  
-  nav ul li a {
-    color: white;
-    text-decoration: none;
-  }
-  
-  nav ul li a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Container */
-  .container {
-    width: 90%;
-    margin: auto;
-    max-width: 1200px;
-  }
-  
-  /* Sections */
-  section {
-    margin: 20px 0;
-  }
-  
-  /* Project Cards */
-  .project-card {
-    border: 1px solid #ddd;
-    padding: 15px;
-    margin: 10px 0;
-    border-radius: 5px;
-    background: #f9f9f9;
-  }
-  
-  .project-card h3 {
-    margin-top: 0;
-  }
-  
-  .project-card a {
-    color: #0073e6;
-    text-decoration: none;
-  }
-  
-  .project-card a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Footer */
-  footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    margin-top: 20px;
-  }
-  
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Header */
+/* Styles the header with a dark background, white text, and centered content */
+header {
+  background: #333; /* Dark gray background */
+  color: #fff; /* White text */
+  padding: 20px 0; /* Vertical padding for spacing */
+  text-align: center; /* Centers the text */
+}
+
+/* Sets the header's main title to a larger font size and removes margins */
+header h1 {
+  margin: 0;
+  font-size: 2.5em; /* Large font size for emphasis */
+}
+
+/* Navigation */
+/* Styles the navigation menu with a dark background and evenly spaced links */
+nav ul {
+  display: flex; /* Creates a horizontal layout */
+  justify-content: center; /* Centers the menu items */
+  list-style: none; /* Removes default bullet points */
+  padding: 10px; /* Adds padding around the menu */
+  background: #444; /* Slightly lighter dark background */
+}
+
+/* Adds horizontal spacing between navigation items */
+nav ul li {
+  margin: 0 15px; /* Adds space on left and right of each menu item */
+}
+
+/* Styles navigation links with white text and no underline by default */
+nav ul li a {
+  color: white; /* White link text */
+  text-decoration: none; /* Removes underline */
+}
+
+/* Adds underline on hover to indicate interactivity */
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Container */
+/* Provides a consistent width and centering for main content areas */
+.container {
+  width: 90%; /* Ensures content adjusts to smaller screens */
+  margin: auto; /* Centers the container */
+  max-width: 1200px; /* Sets a maximum width for large screens */
+}
+
+/* Sections */
+/* Adds spacing between sections to improve layout readability */
+section {
+  margin: 20px 0; /* Adds vertical margin around sections */
+}
+
+/* Project Cards */
+/* Styles individual project cards with a light border and background */
+.project-card {
+  border: 1px solid #ddd; /* Light gray border for definition */
+  padding: 15px; /* Adds internal spacing */
+  margin: 10px 0; /* Adds vertical spacing between cards */
+  border-radius: 5px; /* Rounds the corners slightly */
+  background: #f9f9f9; /* Very light gray background */
+}
+
+/* Ensures project titles stand out by removing top margins */
+.project-card h3 {
+  margin-top: 0; /* Removes default top margin */
+}
+
+/* Styles project links with a blue color to indicate interactivity */
+.project-card a {
+  color: #0073e6; /* Bright blue color for links */
+  text-decoration: none; /* Removes underline */
+}
+
+/* Adds underline on hover to reinforce interactivity */
+.project-card a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+/* Styles the footer with a dark background, white text, and centered content */
+footer {
+  background: #333; /* Dark gray background to match the header */
+  color: #fff; /* White text for readability */
+  text-align: center; /* Centers the footer content */
+  padding: 10px 0; /* Adds vertical padding */
+  margin-top: 20px; /* Adds spacing above the footer */
+}
