@@ -8,13 +8,38 @@ Welcome to **My_Simple_Portfolio**, a personal website designed to showcase my s
 - **Skills Section**: Explore the technologies and tools I use.
 - **Projects Section**: Check out real-world applications I’ve built and contributed to.
 - **Contact Section**: Get in touch with me directly.
+- **Enhanced Visual Design**: New ocean-inspired themes and improved readability for a polished and user-friendly experience.
+
 
 ## Technologies Used 🛠️
 
 ### Frontend:
 - **HTML5**: For semantic structure and content.
-- **CSS3**: For styling and layout.
+- **CSS3**: For styling, layout, and new ocean-themed visuals.
 - **JavaScript**: For interactivity and responsiveness.
+
+### Updated Design Highlights 🎨
+
+## Global Styling:
+Font family updated to 'Poppins', sans-serif for a clean, modern look.
+Ocean-inspired background colors (light blues and deep blues) for a cohesive theme.
+Improved text spacing and alignment for better readability.
+
+## Navigation Bar:
+Smooth hover effects with underlining for better interaction feedback.
+Enhanced layout for seamless navigation.
+
+## Section Layout:
+Alternating background colors to visually separate content sections.
+Consistent heading styles with ocean-blue accents.
+
+## Interactive Elements:
+Floating contact button with hover effects for easy access.
+Subtle shadows and rounded corners for project cards to improve aesthetics.
+
+## Accessibility:
+High-contrast text and WCAG-compliant features ensure inclusivity.
+Optimized for keyboard navigation and screen readers.
 
 ### Frameworks & Libraries:
 - **Bootstrap**: For a responsive and consistent grid system.
@@ -25,7 +50,9 @@ Welcome to **My_Simple_Portfolio**, a personal website designed to showcase my s
 
 ## Live Demo 🌍
 
-Explore the portfolio live here: [My_Simple_Portfolio](https://my-simple-portfolio-sergey.netlify.app/)
+Explore the portfolio live here: 
+
+https://my-simple-portfolio-sergey.netlify.app/
 
 ## Sections Breakdown 📝
 
@@ -51,88 +78,105 @@ Feel free to reach out to me for collaborations or inquiries:
 - **GitHub**: [SergeyReizman](https://github.com/SergeyReizman)
 
 ## Getting Started 💡
-
 If you'd like to explore or modify the project locally:
 1. Clone the repository:
    ```bash
    git clone https://github.com/SergeyReizman/My_Simple_Portfolio.git
+2. Open the project folder and explore the codebase.
 
-Project Specification Document
+## Future Features 🔮
+Blog section for updates.
+Downloadable PDF resume.
+Interactive skill progress bars.
+
+
+## Project Specification Document
 Project Name: My Simple Portfolio
-Version: 1.1
+Version: 1.2
 Author: Sergey Reizman
-Date: November 2024
+Date: December 2024
 1. Overview
 Objective:
-- Create a personal portfolio website showcasing my skills, projects, and contact information as a Full Stack Developer.
+Develop a personal portfolio website to highlight my skills, showcase projects, and provide accessible contact information as a Full Stack Developer.
 Purpose:
--Build a professional online presence.
--Highlight technical expertise and projects.
--Facilitate communication with potential employers or collaborators.
+Establish a professional online presence.
+Emphasize technical expertise and project experience.
+Foster communication with potential employers and collaborators.
 Target Audience:
--Recruiters, potential employers, and collaborators in the tech industry.
+Recruiters, hiring managers, collaborators, and tech industry peers.
 2. Features
 Responsive Design:
--Fully optimized for desktop, tablet, and mobile devices.
+Fully optimized for various devices, including desktop, tablet, and mobile.
 Sections:
--About: Brief introduction and professional summary.
--Skills: Highlights of technical proficiencies.
--Projects: Showcase of key projects with descriptions and live/demo links.
--Contact: Contact details with email and GitHub links.
+About: A brief introduction and professional summary.
+Skills: Highlight technical proficiencies with tools and technologies.
+Projects: Showcase key projects, including live/demo links and descriptions.
+Contact: Provide contact details such as email and GitHub links.
 Navigation:
--Smooth scrolling and intuitive navigation.
+Smooth scrolling with an intuitive and user-friendly interface.
 Accessibility:
--Fully WCAG-compliant, including:
-     -High-contrast color schemes.
-     -ARIA roles for screen readers.
-     -Keyboard navigation support.
+Fully WCAG 2.1-compliant, ensuring inclusivity with:
+High-contrast color schemes.
+ARIA roles for screen readers.
+Keyboard navigation support.
 Future Features:
--Blog section for updates.
--Downloadable PDF resume.
--Interactive skill progress bars.
+Blog section for updates on learning and projects.
+Downloadable PDF resume for recruiters.
+Interactive skill progress bars and analytics.
+Enhanced project gallery with carousel view and filters.
 3. Technologies Used
 Frontend:
--HTML5, CSS3: For structure and styling.
--JavaScript: For interactivity.
--Bootstrap, jQuery: For responsive layout and dynamic elements.
+HTML5, CSS3: For semantic structure, styling, and layout.
+JavaScript: For dynamic interactivity and responsiveness.
+Bootstrap: For a consistent grid system and responsive design.
+jQuery: For smooth animations and dynamic content manipulation.
 Deployment:
--Netlify: For hosting with automatic GitHub integration.
--HTTPS: Ensuring secure communication.
+Netlify: Secure hosting with automated GitHub integrations.
+HTTPS: Ensures data security and encryption during communication.
 4. Project Workflow
 Planning:
--Define layout and content structure.
--Identify target audience needs.
+Define the site’s layout, content structure, and navigation flow.
+Identify audience needs for an engaging user experience.
 Development:
--Design and build using HTML, CSS, and JavaScript.
--Ensure mobile responsiveness and accessibility.
+Implement design with HTML, CSS, and JavaScript.
+Focus on clean, modular code to enhance maintainability.
+Ensure responsiveness and accessibility across devices.
 Testing:
--Cross-browser testing using tools like BrowserStack.
--Conduct usability testing with peers or mentors.
--Use Google Lighthouse to measure responsiveness, performance, and accessibility.
+Conduct cross-browser testing using tools like BrowserStack.
+Gather user feedback for UI/UX improvements.
+Use Google Lighthouse to monitor:
+Performance.
+Accessibility.
+Best practices compliance.
 Deployment:
--Host and configure on Netlify.
--Implement continuous deployment linked to GitHub.
-5. Visual Mockups
+Host the site on Netlify.
+Enable continuous deployment through GitHub integration.
+5. VVisual Mockups
 Wireframes:
--Appendix with layout designs for mobile, tablet, and desktop views.
+Detailed mockups for mobile, tablet, and desktop layouts are included in the appendix.
 6. Deliverables
--Fully functional portfolio website.
--Repository on GitHub with detailed documentation.
--Live deployment on Netlify.
+Fully functional portfolio website.
+GitHub repository with well-documented code.
+Live deployment on Netlify.
 7. Success Criteria
--Professional Design: Visually appealing and consistent.
--Seamless User Experience: Properly displayed content on all devices.
--Performance Metrics:
-     -Bounce Rate: Less than 40%.
-     -Page Load Time: Under 3 seconds.
-     -Google Lighthouse Scores:
-          -Accessibility: 95% or above.
-          -Performance: 90% or above.
-          -Best Practices: 95% or above.
--Cross-Browser Compatibility: Consistent experience across major browsers (Chrome, Firefox, Safari, Edge).
+Design:
+A visually appealing and consistent aesthetic aligned with modern design principles.
+User Experience:
+Content is displayed properly on all screen sizes and devices.
+Performance Metrics:
+Bounce Rate: Below 40%.
+Page Load Time: Under 3 seconds.
+Google Lighthouse Scores:
+Accessibility: 97% or above.
+Performance: 92% or above.
+Best Practices: 95% or above.
+Compatibility:
+Consistent user experience across major browsers, including Chrome, Firefox, Safari, and Edge.
 8. Deployment Details
--Version Control: Follow GitFlow for branch management.
--Continuous Deployment: Automated builds triggered by GitHub pushes.
+Version Control:
+Adhere to the GitFlow model for efficient branch management.
+Continuous Deployment:
+Automate builds with GitHub push triggers integrated into Netlify.
 9. Links
 Repository Link:
 https://github.com/SergeyReizman/My_Simple_Portfolio
@@ -140,5 +184,7 @@ Live Website:
 My Simple Portfolio on Netlify
 https://my-simple-portfolio-sergey.netlify.app/
 10. Appendix
--Visual Mockups: Mobile, tablet, and desktop wireframes included.
--Testing Tools: BrowserStack and Google Lighthouse report examples.
+Visual Mockups:
+Updated designs showcasing new hover effects, color schemes, and responsive layouts for various screen sizes.
+Testing Tools:
+Examples of BrowserStack and Google Lighthouse reports are attached for reference.
