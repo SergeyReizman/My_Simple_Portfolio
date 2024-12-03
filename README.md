@@ -4,12 +4,16 @@ Welcome to **My_Simple_Portfolio**, a personal website designed to showcase my s
 
 ## Features 🚀
 
+- **Responsive Design:** Fully mobile-responsive layout that looks great on all devices.
+- **Smooth Hover Effects:** Interactive elements like buttons and links have smooth transition effects for a refined, polished feel.
+- **Project Showcase:** Easily view my featured projects with clickable links.
+- **Elegant Navigation:** Clean, simple navigation bar with intuitive layout.
+- **Floating Contact Button:** Easy access to contact information.
 - **About Section**: Learn more about my background and professional journey.
 - **Skills Section**: Explore the technologies and tools I use.
 - **Projects Section**: Check out real-world applications I’ve built and contributed to.
 - **Contact Section**: Get in touch with me directly.
 - **Enhanced Visual Design**: New ocean-inspired themes and improved readability for a polished and user-friendly experience.
-
 
 ## Technologies Used 🛠️
 
@@ -17,29 +21,30 @@ Welcome to **My_Simple_Portfolio**, a personal website designed to showcase my s
 - **HTML5**: For semantic structure and content.
 - **CSS3**: For styling, layout, and new ocean-themed visuals.
 - **JavaScript**: For interactivity and responsiveness.
+- **Bootstrap**: For responsive design, pre-built UI components, and efficient grid systems, enabling rapid development of mobile-first, visually appealing layouts.
 
 ### Updated Design Highlights 🎨
 
-## Global Styling:
-Font family updated to 'Poppins', sans-serif for a clean, modern look.
-Ocean-inspired background colors (light blues and deep blues) for a cohesive theme.
-Improved text spacing and alignment for better readability.
+#### Global Styling:
+- Font family updated to 'Poppins', sans-serif for a clean, modern look.
+- Ocean-inspired background colors (light blues and deep blues) for a cohesive theme.
+- Improved text spacing and alignment for better readability.
 
-## Navigation Bar:
-Smooth hover effects with underlining for better interaction feedback.
-Enhanced layout for seamless navigation.
+#### Navigation Bar:
+- Smooth hover effects with underlining for better interaction feedback.
+- Enhanced layout for seamless navigation.
 
-## Section Layout:
-Alternating background colors to visually separate content sections.
-Consistent heading styles with ocean-blue accents.
+#### Section Layout:
+- Alternating background colors to visually separate content sections.
+- Consistent heading styles with ocean-blue accents.
 
-## Interactive Elements:
-Floating contact button with hover effects for easy access.
-Subtle shadows and rounded corners for project cards to improve aesthetics.
+#### Interactive Elements:
+- Floating contact button with hover effects for easy access.
+- Subtle shadows and rounded corners for project cards to improve aesthetics.
 
-## Accessibility:
-High-contrast text and WCAG-compliant features ensure inclusivity.
-Optimized for keyboard navigation and screen readers.
+#### Accessibility:
+- High-contrast text and WCAG-compliant features ensure inclusivity.
+- Optimized for keyboard navigation and screen readers.
 
 ### Frameworks & Libraries:
 - **Bootstrap**: For a responsive and consistent grid system.
@@ -89,21 +94,32 @@ Blog section for updates.
 Downloadable PDF resume.
 Interactive skill progress bars.
 
+## Acknowledgements
+Thanks to Bootstrap for their responsive grid system and UI components.
+markdown
+ 
 
 ## Project Specification Document
 Project Name: My Simple Portfolio
 Version: 1.2
 Author: Sergey Reizman
 Date: December 2024
+
 1. Overview
 Objective:
 Develop a personal portfolio website to highlight my skills, showcase projects, and provide accessible contact information as a Full Stack Developer.
+
 Purpose:
+
 Establish a professional online presence.
 Emphasize technical expertise and project experience.
 Foster communication with potential employers and collaborators.
 Target Audience:
-Recruiters, hiring managers, collaborators, and tech industry peers.
+
+Recruiters
+Hiring managers
+Collaborators
+Tech industry peers
 2. Features
 Responsive Design:
 Fully optimized for various devices, including desktop, tablet, and mobile.
@@ -151,7 +167,7 @@ Best practices compliance.
 Deployment:
 Host the site on Netlify.
 Enable continuous deployment through GitHub integration.
-5. VVisual Mockups
+5. Visual Mockups
 Wireframes:
 Detailed mockups for mobile, tablet, and desktop layouts are included in the appendix.
 6. Deliverables
@@ -188,3 +204,4 @@ Visual Mockups:
 Updated designs showcasing new hover effects, color schemes, and responsive layouts for various screen sizes.
 Testing Tools:
 Examples of BrowserStack and Google Lighthouse reports are attached for reference.
+This document provides a comprehensive overview of the project, detailing its purpose, features, technologies, and the workflow used to bring it to life. The success criteria ensure that the website meets the highest standards for performance, accessibility, and user experience.
