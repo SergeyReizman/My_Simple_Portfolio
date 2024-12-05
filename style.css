@@ -77,15 +77,31 @@ nav ul li {
 }
 
 nav ul li a {
-  color: var(--text-light); /* High contrast white text */
   text-decoration: none; /* Removes default underline */
   font-size: 1.1em; /* Slightly larger for readability */
   transition: color 0.3s ease, text-decoration 0.3s ease; /* Smooth link hover effects */
 }
 
+nav ul li:nth-child(1) a {
+  color: #FFEB3B; /* Light yellow for 'About' */
+}
+
+nav ul li:nth-child(2) a {
+  color: #4CAF50; /* Light green for 'Skills' */
+}
+
+nav ul li:nth-child(3) a {
+  color: #FF4081; /* Light pink for 'Projects' */
+}
+
+nav ul li:nth-child(4) a {
+  color: #FF9800; /* Light orange for 'Contact' */
+}
+
+/* Hover Effects */
 nav ul li a:hover {
   text-decoration: underline; /* Adds underline on hover */
-  color: var(--primary-color); /* Changes color on hover */
+  color: var(--primary-color); /* Changes color to ocean blue on hover */
 }
 
 /* Section Styles */
