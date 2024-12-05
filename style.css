@@ -126,6 +126,13 @@ section h2 {
   font-size: 2em; /* Larger font size for headings */
   color: var(--primary-color); /* Ocean blue for section headings */
   margin-bottom: 10px; /* Spacing below the heading */
+  transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition for color and transform */
+}
+
+/* Hover Effect for Section Headings */
+section h2:hover {
+  transform: translateX(10px); /* Subtle horizontal shift */
+  color: var(--tertiary-color); /* Change color to deep ocean blue */
 }
 
 /* Text and List Styles */
