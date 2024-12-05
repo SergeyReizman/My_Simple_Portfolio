@@ -14,6 +14,7 @@ Welcome to **My_Simple_Portfolio**, a personal website designed to showcase my s
 - **Projects Section**: Check out real-world applications I’ve built and contributed to.
 - **Contact Section**: Get in touch with me directly.
 - **Enhanced Visual Design**: New ocean-inspired themes and improved readability for a polished and user-friendly experience.
+- **Interactive Section Hover Effects:** Engaging hover effects on section headings for better interactivity.
 
 ## Technologies Used 🛠️
 
@@ -37,10 +38,12 @@ Welcome to **My_Simple_Portfolio**, a personal website designed to showcase my s
 #### Section Layout:
 - Alternating background colors to visually separate content sections.
 - Consistent heading styles with ocean-blue accents.
+- **Interactive Section Hover Effects:** Added hover effects on section headings to improve interactivity and make the sections more engaging for users.
 
 #### Interactive Elements:
 - Floating contact button with hover effects for easy access.
 - Subtle shadows and rounded corners for project cards to improve aesthetics.
+- Interactive section heading hover effects for a more engaging experience.
 
 ### Accessibility Features ♿
 
@@ -164,7 +167,8 @@ Develop a personal portfolio website to highlight my skills, showcase projects, 
 #### **Enhanced Visual Design:**  
 - Ocean-inspired themes with light and deep blues for a cohesive aesthetic.  
 - Subtle hover effects on buttons, links, and project cards for improved interaction feedback.  
-- Alternating background colors to visually separate content sections.  
+- Alternating background colors to visually separate content sections.
+- **Interactive Section Hover Effects**: Added hover effects on section headings to improve interactivity and make the sections more engaging for users.  
 
 #### **Future Features:**  
 - Blog section for updates on learning and projects.  
