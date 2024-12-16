@@ -4,6 +4,10 @@
   box-sizing: border-box; /* Includes padding and borders in the element's total width/height */
 }
 
+html {
+  font-size: 100%; /* Default font scaling */
+}
+
 :root {
   /* Define reusable variables for colors and themes */
   --primary-color: #0288d1; /* Ocean blue for primary actions and highlights */
@@ -17,192 +21,184 @@
 
 body {
   font-family: 'Poppins', sans-serif; /* Modern, elegant font family */
-  margin: 0; /* Removes default margin */
-  padding: 0; /* Removes default padding */
-  line-height: 1.6; /* Ensures readability with adequate spacing */
-  background-color: var(--background-color); /* Light blue background for the page */
-  color: var(--text-dark); /* Default text color for readability */
-  transition: background-color 0.3s ease; /* Smooth transition for background color changes */
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: var(--background-color);
+  color: var(--text-dark);
+  transition: background-color 0.3s ease;
 }
 
 /* Accessibility: High contrast focus styles for better keyboard navigation */
-:focus {
-  outline: 2px solid var(--secondary-color); /* Clear focus outline */
-  outline-offset: 3px; /* Space between outline and element */
+:focus-visible {
+  outline: 2px solid var(--secondary-color);
+  outline-offset: 3px;
 }
 
 /* Header Styles */
-/* Header section with a gradient background and accessible overlay */
 header {
-  background: var(--header-bg); /* Gradient background */
-  color: var(--text-light); /* White text for better contrast on dark gradient */
-  text-align: center; /* Centers text within the header */
-  padding: 50px 0; /* Adds vertical padding for spacing */
-  background-size: cover; /* Ensures the gradient fills the section */
-  position: relative; /* Enables positioning for overlay */
+  background: var(--header-bg);
+  color: var(--text-light);
+  text-align: center;
+  padding: 50px 0;
+  background-size: cover;
+  position: relative;
 }
 
-/* Semi-transparent overlay for better text visibility */
 header::before {
-  content: ''; /* Empty content for overlay */
-  position: absolute; /* Positions overlay over the entire header */
-  top: 0; left: 0; right: 0; bottom: 0; /* Full coverage */
-  background: rgba(0, 0, 0, 0.3); /* Black overlay with 30% transparency */
-  z-index: -1; /* Places overlay behind content */
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: -1;
 }
 
-/* Main Title in Header */
 header h1 {
-  margin: 0; /* Removes default margin */
-  font-size: 2.5em; /* Large font size for emphasis */
-  transition: font-size 0.3s ease; /* Smooth font size change on hover */
+  margin: 0;
+  font-size: 2.5em;
+  transition: font-size 0.3s ease;
 }
 
 header h1:hover {
-  font-size: 2.7em; /* Slightly larger on hover for emphasis */
+  font-size: 2.7em;
 }
 
 /* Navigation Styles */
-/* Styles the navigation bar and links for accessibility */
 nav ul {
-  display: flex; /* Horizontal layout for menu items */
-  justify-content: center; /* Centers menu items */
-  list-style: none; /* Removes default bullets */
-  padding: 10px; /* Adds padding to the navigation bar */
-  background: var(--tertiary-color); /* Deep ocean blue background for navigation */
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 10px;
+  background: var(--tertiary-color);
 }
 
 nav ul li {
-  margin: 0 15px; /* Horizontal spacing between menu items */
+  margin: 0 15px;
 }
 
 nav ul li a {
-  text-decoration: none; /* Removes default underline */
-  font-size: 1.1em; /* Slightly larger for readability */
-  transition: color 0.3s ease, text-decoration 0.3s ease; /* Smooth link hover effects */
+  text-decoration: none;
+  font-size: 1.1em;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
 }
 
-nav ul li:nth-child(1) a {
-  color: #FFEB3B; /* Light yellow for 'About' */
-}
+nav ul li:nth-child(1) a { color: #FFEB3B; }
+nav ul li:nth-child(2) a { color: #4CAF50; }
+nav ul li:nth-child(3) a { color: #FF4081; }
+nav ul li:nth-child(4) a { color: #FF9800; }
 
-nav ul li:nth-child(2) a {
-  color: #4CAF50; /* Light green for 'Skills' */
-}
-
-nav ul li:nth-child(3) a {
-  color: #FF4081; /* Light pink for 'Projects' */
-}
-
-nav ul li:nth-child(4) a {
-  color: #FF9800; /* Light orange for 'Contact' */
-}
-
-/* Hover Effects */
-nav ul li a:hover {
-  text-decoration: underline; /* Adds underline on hover */
-  color: var(--primary-color); /* Changes color to ocean blue on hover */
+nav ul li a:hover, a:hover {
+  text-decoration: underline;
+  color: var(--primary-color);
 }
 
 /* Section Styles */
-/* Alternating background colors for visual separation */
 section:nth-child(even) {
-  background-color: #ffffff; /* White background for even sections */
+  background-color: #ffffff;
 }
 
 section:nth-child(odd) {
-  background-color: #b2ebf2; /* Light blue background for odd sections */
+  background-color: #b2ebf2;
 }
 
 .container {
-  width: 90%; /* Relative width for responsiveness */
-  margin: auto; /* Centers content horizontally */
-  max-width: 1200px; /* Restricts maximum width for large screens */
-  padding: 20px; /* Internal padding for content spacing */
+  width: 90%;
+  margin: auto;
+  max-width: 1200px;
+  padding: 20px;
 }
 
-/* Section Heading Styles */
 section h2 {
-  font-size: 2em; /* Larger font size for headings */
-  color: var(--primary-color); /* Ocean blue for section headings */
-  margin-bottom: 10px; /* Spacing below the heading */
-  transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition for color and transform */
+  font-size: 2em;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
-/* Hover Effect for Section Headings */
 section h2:hover {
-  transform: translateX(10px); /* Subtle horizontal shift */
-  color: var(--tertiary-color); /* Change color to deep ocean blue */
+  transform: translateX(10px);
+  color: var(--tertiary-color);
 }
 
-/* Text and List Styles */
 section p, section ul {
-  font-size: 1.1em; /* Slightly larger font for readability */
-  color: var(--text-dark); /* Dark text for contrast on light backgrounds */
-  line-height: 1.8; /* Spacing for readability */
+  font-size: 1.1em;
+  color: var(--text-dark);
+  line-height: 1.8;
 }
 
 /* Project Cards */
-/* Accessible, interactive styles for project cards */
 .project-card {
-  border: 1px solid #ddd; /* Light gray border for definition */
-  padding: 15px; /* Internal padding */
-  margin: 10px 0; /* Vertical spacing */
-  border-radius: 5px; /* Rounded corners */
-  background: #ffffff; /* White background for clarity */
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 5px;
+  background: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  will-change: transform, box-shadow;
 }
 
 .project-card:hover {
-  transform: translateY(-5px); /* Slight lift on hover */
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
 }
 
 .project-card h3 {
-  margin-top: 0; /* Removes default margin */
-  font-size: 1.5em; /* Larger font size for titles */
-  color: var(--tertiary-color); /* Deep ocean blue for titles */
+  margin-top: 0;
+  font-size: 1.5em;
+  color: var(--tertiary-color);
 }
 
 /* Footer Styles */
 footer {
-  background: var(--tertiary-color); /* Deep ocean blue background */
-  color: var(--text-light); /* High contrast white text */
-  text-align: center; /* Centers content */
-  padding: 20px 0; /* Vertical padding for spacing */
-  margin-top: 40px; /* Adds space before footer */
+  background: var(--tertiary-color);
+  color: var(--text-light);
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
 }
 
 /* Floating Contact Button */
 #contact-button {
-  position: fixed; /* Fixed in viewport */
-  bottom: 30px; /* 30px from bottom */
-  right: 30px; /* 30px from right */
-  background-color: var(--primary-color); /* Blue background */
-  color: var(--text-light); /* White text */
-  padding: 15px 30px; /* Internal padding for size */
-  border-radius: 50px; /* Circular shape */
-  font-size: 1.1em; /* Larger font */
-  font-family: 'Poppins', sans-serif; /* Consistent typography */
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  text-decoration: none; /* Removes underline */
-  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: var(--primary-color);
+  color: var(--text-light);
+  padding: 15px 30px;
+  border-radius: 50px;
+  font-size: 1.1em;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 #contact-button:hover {
-  background-color: var(--secondary-color); /* Light blue on hover */
-  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+  background-color: var(--secondary-color);
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* General Link Styles */
-a {
-  color: var(--primary-color); /* Default blue for links */
-  text-decoration: none; /* No underline */
-  transition: color 0.3s ease, text-decoration 0.3s ease; /* Smooth hover effects */
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
 }
 
-a:hover {
-  text-decoration: underline; /* Underline on hover */
-  color: var(--secondary-color); /* Light blue on hover */
+::-webkit-scrollbar-thumb {
+  background: var(--tertiary-color);
+  border-radius: 4px;
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #121212;
+    color: #f0f0f0;
+  }
+  nav ul {
+    background: #1f2937;
+  }
+  footer {
+    background: #1f2937;
+  }
 }
