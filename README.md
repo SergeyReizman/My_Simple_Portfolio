@@ -16,6 +16,42 @@ Welcome to **My_Simple_Portfolio**, a personal website designed to showcase my s
 - **Enhanced Visual Design**: New ocean-inspired themes and improved readability for a polished and user-friendly experience.
 - **Interactive Section Hover Effects:** Engaging hover effects on section headings for better interactivity.
 
+## Design Updates 🎨
+
+# Primary Color Scheme:
+
+Primary Color: Bright ocean blue (#0288d1) for key elements like buttons and highlights.
+Secondary Color: Light blue (#81d4fa) for softer contrasts.
+Accent Color: Deep ocean blue (#01579b) for hover states and strong accents.
+
+# Background and Header:
+
+Background: Soft ocean-inspired light color (#e0f7fa) for a clean, calming aesthetic.
+Header: Gradient background transitioning from ocean blue to light blue, offering a modern visual appeal.
+
+# Typography:
+
+Font Family: Poppins for a modern and elegant appearance.
+Font Adjustments: Sizes and weights optimized for readability and visual hierarchy.
+
+# Hover Effects: Smooth transitions applied to headings and links for interactivity.
+
+Hover and Animation Effects:
+Navigation Links: Underlined on hover with smooth transition effects.
+
+# Headings: Slight positional shifts on hover.
+
+Project Cards and Buttons: Scaling and shadow effects enhance interactivity.
+
+# Footer and Navigation:
+
+Footer: Styled with deep ocean blue for a consistent theme.
+Navigation Bar: Positioned at the top, with flexbox for centered alignment of items.
+
+# Dark Mode Support:
+
+Detects system preferences and automatically switches to a contrasting dark mode.
+
 ## Technologies Used 🛠️
 
 ### Frontend:
@@ -106,10 +142,9 @@ Interactive skill progress bars.
 
 ## Acknowledgements 🙌
 Special thanks to:
-Bootstrap: For their responsive grid system and UI components.
+Bootstrap: For responsive grid system and UI components.
 WebAIM Contrast Checker: For validating color contrast.
-Accessibility advocates who inspire inclusive design.
- 
+Accessibility Advocates: For promoting inclusive web design.
 
 ## Project Specification Document
 Project Name: My Simple Portfolio
