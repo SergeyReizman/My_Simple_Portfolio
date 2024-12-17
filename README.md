@@ -158,8 +158,6 @@ Date: December 2024
 **Author:** Sergey Reizman  
 **Date:** December 2024  
 
----
-
 ### 1. Overview  
 
 #### Objective:  
@@ -168,15 +166,15 @@ Develop a personal portfolio website to highlight my skills, showcase projects, 
 #### Purpose:  
 - Establish a professional online presence.  
 - Emphasize technical expertise and project experience.  
-- Foster communication with potential employers and collaborators.  
+- Foster communication with potential employers and collaborators. 
+- Demonstrate industry-standard design principles and best coding practices.
+- Provide a central hub for showcasing professional development and continuous learning. 
 
 #### Target Audience:  
 - Recruiters  
 - Hiring managers  
 - Collaborators  
 - Tech industry peers  
-
----
 
 ### 2. Features  
 
@@ -190,19 +188,23 @@ Develop a personal portfolio website to highlight my skills, showcase projects, 
 - **Contact:** Provide contact details such as email and GitHub links.  
 
 #### **Navigation:**  
-- Smooth scrolling with an intuitive and user-friendly interface.  
+- Smooth scrolling with an intuitive and user-friendly interface.
+- Sticky navigation bar for consistent access to site sections.  
 
 #### **Accessibility:**  
 - Fully WCAG 2.1-compliant, ensuring inclusivity with:  
   - **High-contrast color schemes** for readability.  
   - **ARIA roles** for screen readers.  
   - **Keyboard navigation support** with visible `:focus` indicators on interactive elements.  
-  - **Screen reader support** using semantic HTML5 elements and descriptive labels.  
+  - **Screen reader support** using semantic HTML5 elements and descriptive labels.
+  - **Implement skip links for improved keyboard navigation.**  
 
 #### **Enhanced Visual Design:**  
 - Ocean-inspired themes with light and deep blues for a cohesive aesthetic.  
 - Subtle hover effects on buttons, links, and project cards for improved interaction feedback.  
 - Alternating background colors to visually separate content sections.
+- Integrate CSS animations for project card reveals on scroll.
+
 - **Interactive Section Hover Effects**: Added hover effects on section headings to improve interactivity and make the sections more engaging for users.  
 
 #### **Future Features:**  
@@ -210,8 +212,6 @@ Develop a personal portfolio website to highlight my skills, showcase projects, 
 - Downloadable PDF resume for recruiters.  
 - Interactive skill progress bars and analytics.  
 - Enhanced project gallery with carousel view and filters.  
-
----
 
 ### 3. Technologies Used  
 
@@ -223,11 +223,14 @@ Develop a personal portfolio website to highlight my skills, showcase projects, 
 
 #### **Deployment:**  
 - **Netlify:** Secure hosting with automated GitHub integrations.  
-- **HTTPS:** Ensures data security and encryption during communication.  
+- **HTTPS:** Ensures data security and encryption during communication.
+- Google Fonts: For typography customization.
+- Font Awesome: For icons enhancing UI elements.  
 
----
+### 4. Project Workflow 
 
-### 4. Project Workflow  
+#### **Code Review Process** 
+- Peer reviews and linting ensure maintainable and scalable code.
 
 #### **Planning:**  
 - Define the site’s layout, content structure, and navigation flow.  
@@ -250,21 +253,19 @@ Develop a personal portfolio website to highlight my skills, showcase projects, 
 - Host the site on Netlify.  
 - Enable continuous deployment through GitHub integration.  
 
----
+#### **Monitoring & Analytics**
+- Integrate Google Analytics for tracking user interactions.
 
 ### 5. Visual Mockups  
 
-- Detailed mockups for mobile, tablet, and desktop layouts are included in the appendix.  
-
----
+- Detailed mockups for mobile, tablet, and desktop layouts are included in the appendix.
+- Dark mode preview and animated content reveals.  
 
 ### 6. Deliverables  
 
 - Fully functional portfolio website.  
 - GitHub repository with well-documented code.  
 - Live deployment on Netlify.  
-
----
 
 ### 7. Success Criteria  
 
@@ -280,12 +281,11 @@ Develop a personal portfolio website to highlight my skills, showcase projects, 
 - **Google Lighthouse Scores:**  
   - **Accessibility:** 97% or above.  
   - **Performance:** 92% or above.  
-  - **Best Practices:** 95% or above.  
+  - **Best Practices:** 95% or above.
+  - **SEO Optimization:** Achieve a Google PageSpeed Insights SEO score of 90% or above.  
 
 #### **Compatibility:**  
 - Consistent user experience across major browsers, including Chrome, Firefox, Safari, and Edge.  
-
----
 
 ### 8. Deployment Details  
 
@@ -295,7 +295,11 @@ Develop a personal portfolio website to highlight my skills, showcase projects, 
 #### **Continuous Deployment:**  
 - Automate builds with GitHub push triggers integrated into Netlify.  
 
----
+#### **Deployment Security:** 
+- Use environment variables for sensitive data protection.
+
+#### **Backup Plan:**
+- Regular GitHub repository backups to ensure code recovery.
 
 ### 9. Links  
 
@@ -305,8 +309,6 @@ Develop a personal portfolio website to highlight my skills, showcase projects, 
 - **Live Website:**  
   [My Simple Portfolio on Netlify](https://my-simple-portfolio-sergey.netlify.app/)  
 
----
-
 ### 10. Appendix  
 
 #### **Visual Mockups:**  
@@ -314,7 +316,5 @@ Develop a personal portfolio website to highlight my skills, showcase projects, 
 
 #### **Testing Tools:**  
 - Examples of BrowserStack and Google Lighthouse reports are attached for reference.  
-
----
 
 This document reflects the latest enhancements to the project, emphasizing accessibility, refined visuals, and a user-friendly experience while adhering to high-performance standards.
