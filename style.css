@@ -5,7 +5,7 @@
 }
 
 html {
-  font-size: 100%; /* Default font scaling */
+  font-size: 100%; /* Default font scaling, making it easier to scale text sizes globally */
 }
 
 :root {
@@ -14,7 +14,7 @@ html {
   --secondary-color: #81d4fa; /* Light blue for secondary elements */
   --tertiary-color: #01579b; /* Deep ocean blue for strong accents */
   --background-color: #e0f7fa; /* Light ocean-inspired background */
-  --header-bg: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+  --header-bg: linear-gradient(to right, var(--primary-color), var(--secondary-color)); /* Gradient for header background */
   --text-dark: #333; /* Standard dark text for readability */
   --text-light: #ffffff; /* Light text for dark backgrounds */
 }
@@ -23,10 +23,10 @@ body {
   font-family: 'Poppins', sans-serif; /* Modern, elegant font family */
   margin: 0;
   padding: 0;
-  line-height: 1.6;
-  background-color: var(--background-color);
-  color: var(--text-dark);
-  transition: background-color 0.3s ease;
+  line-height: 1.6; /* Ensure comfortable line height for readability */
+  background-color: var(--background-color); /* Light ocean background color */
+  color: var(--text-dark); /* Standard text color */
+  transition: background-color 0.3s ease; /* Smooth transition when background color changes */
 }
 
 /* Accessibility: High contrast focus styles for better keyboard navigation */
@@ -37,30 +37,30 @@ body {
 
 /* Header Styles */
 header {
-  background: var(--header-bg);
-  color: var(--text-light);
+  background: var(--header-bg); /* Apply gradient background */
+  color: var(--text-light); /* Light text color */
   text-align: center;
   padding: 50px 0;
-  background-size: cover;
-  position: relative;
+  background-size: cover; /* Ensure the background is scaled properly */
+  position: relative; /* Set relative position for header content */
 }
 
 header::before {
   content: '';
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(0, 0, 0, 0.3);
-  z-index: -1;
+  background: rgba(0, 0, 0, 0.3); /* Darken the background for better text contrast */
+  z-index: -1; /* Ensure the overlay doesn't cover content */
 }
 
 header h1 {
   margin: 0;
-  font-size: 2.5em;
-  transition: font-size 0.3s ease;
+  font-size: 2.5em; /* Default header size */
+  transition: font-size 0.3s ease; /* Smooth transition for font size */
 }
 
 header h1:hover {
-  font-size: 2.7em;
+  font-size: 2.7em; /* Slightly larger header size on hover */
 }
 
 /* Navigation Styles */
@@ -69,15 +69,15 @@ nav ul {
   justify-content: center;
   list-style: none;
   padding: 10px;
-  background: var(--tertiary-color);
+  background: var(--tertiary-color); /* Deep ocean background for navigation */
 }
 
 nav ul li {
-  margin: 0 15px;
+  margin: 0 15px; /* Space out the navigation items */
 }
 
 nav ul li a {
-  text-decoration: none;
+  text-decoration: none; /* Remove underlines from links */
   font-size: 1.1em;
   transition: color 0.3s ease, text-decoration 0.3s ease;
 }
@@ -88,71 +88,71 @@ nav ul li:nth-child(3) a { color: #FF4081; }
 nav ul li:nth-child(4) a { color: #FF9800; }
 
 nav ul li a:hover, a:hover {
-  text-decoration: underline;
-  color: var(--primary-color);
+  text-decoration: underline; /* Underline links on hover */
+  color: var(--primary-color); /* Change color to primary on hover */
 }
 
 /* Section Styles */
 section:nth-child(even) {
-  background-color: #ffffff;
+  background-color: #ffffff; /* White background for even sections */
 }
 
 section:nth-child(odd) {
-  background-color: #b2ebf2;
+  background-color: #b2ebf2; /* Light ocean blue for odd sections */
 }
 
 .container {
-  width: 90%;
+  width: 90%; /* Use 90% of the screen width */
   margin: auto;
-  max-width: 1200px;
+  max-width: 1200px; /* Limit max width for large screens */
   padding: 20px;
 }
 
 section h2 {
   font-size: 2em;
-  color: var(--primary-color);
+  color: var(--primary-color); /* Primary color for section titles */
   margin-bottom: 10px;
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
 section h2:hover {
-  transform: translateX(10px);
-  color: var(--tertiary-color);
+  transform: translateX(10px); /* Slight movement on hover */
+  color: var(--tertiary-color); /* Change color to tertiary on hover */
 }
 
 section p, section ul {
-  font-size: 1.1em;
-  color: var(--text-dark);
-  line-height: 1.8;
+  font-size: 1.1em; /* Slightly larger text for readability */
+  color: var(--text-dark); /* Standard dark text */
+  line-height: 1.8; /* Increase line height for better legibility */
 }
 
 /* Project Cards */
 .project-card {
-  border: 1px solid #ddd;
+  border: 1px solid #ddd; /* Light border for cards */
   padding: 15px;
   margin: 10px 0;
   border-radius: 5px;
-  background: #ffffff;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  background: #ffffff; /* White background for cards */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  will-change: transform, box-shadow;
+  will-change: transform, box-shadow; /* Optimize for performance during hover */
 }
 
 .project-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px); /* Lift the card on hover */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); /* Increase shadow for hover effect */
 }
 
 .project-card h3 {
   margin-top: 0;
-  font-size: 1.5em;
-  color: var(--tertiary-color);
+  font-size: 1.5em; /* Larger title for project cards */
+  color: var(--tertiary-color); /* Use deep ocean color for titles */
 }
 
 /* Footer Styles */
 footer {
-  background: var(--tertiary-color);
-  color: var(--text-light);
+  background: var(--tertiary-color); /* Deep ocean background for footer */
+  color: var(--text-light); /* Light text color */
   text-align: center;
   padding: 20px 0;
   margin-top: 40px;
@@ -163,42 +163,137 @@ footer {
   position: fixed;
   bottom: 30px;
   right: 30px;
-  background-color: var(--primary-color);
-  color: var(--text-light);
+  background-color: var(--primary-color); /* Ocean blue background */
+  color: var(--text-light); /* Light text color */
   padding: 15px 30px;
   border-radius: 50px;
-  font-size: 1.1em;
+  font-size: 1.1em; /* Slightly larger text */
   font-family: 'Poppins', sans-serif;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-  text-decoration: none;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  text-decoration: none; /* Remove underline from button */
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 #contact-button:hover {
-  background-color: var(--secondary-color);
-  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+  background-color: var(--secondary-color); /* Light blue on hover */
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2); /* Larger shadow on hover */
 }
 
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 8px; /* Narrow scrollbar */
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--tertiary-color);
+  background: var(--tertiary-color); /* Deep ocean color for the scrollbar thumb */
   border-radius: 4px;
 }
 
 /* Dark Mode Support */
 @media (prefers-color-scheme: dark) {
   body {
-    background-color: #121212;
-    color: #f0f0f0;
+    background-color: #121212; /* Dark background for dark mode */
+    color: #f0f0f0; /* Light text color for dark mode */
   }
   nav ul {
-    background: #1f2937;
+    background: #1f2937; /* Dark background for navigation */
   }
   footer {
-    background: #1f2937;
+    background: #1f2937; /* Dark footer */
+  }
+}
+
+/* Mobile & Small Screen Styles */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px; /* Smaller font size for mobile */
+  }
+
+  header h1 {
+    font-size: 2.5em; /* Reduce header size on smaller screens */
+  }
+
+  nav ul {
+    flex-direction: column; /* Stack navigation items vertically */
+    padding: 20px;
+  }
+
+  nav ul li {
+    margin: 10px 0; /* Space out navigation items */
+  }
+
+  section h2 {
+    font-size: 1.8em; /* Adjust section headers for mobile */
+  }
+
+  .container {
+    width: 95%; /* Use more screen space for smaller devices */
+  }
+
+  .project-card {
+    padding: 20px; /* Reduce padding inside project cards */
+  }
+
+  #contact-button {
+    padding: 12px 25px;
+    font-size: 1em; /* Adjust button size */
+    bottom: 20px; /* Keep the button within mobile screen bounds */
+    right: 20px;
+  }
+}
+
+/* Very Small Screens (Mobile Phones) */
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 2em; /* Further reduce header size */
+  }
+
+  nav ul {
+    padding: 15px;
+  }
+
+  nav ul li {
+    margin: 8px 0;
+  }
+
+  .container {
+    width: 100%; /* Full width for very small screens */
+    padding: 10px; /* Reduced padding for tight spaces */
+  }
+
+  section h2 {
+    font-size: 1.6em; /* Further reduce section header size */
+  }
+
+  .project-card {
+    padding: 15px; /* Smaller padding for tight spaces */
+  }
+
+  #contact-button {
+    padding: 10px 20px; /* Smaller button for compact screens */
+    font-size: 0.9em;
+  }
+}
+
+/* Large Screens (Desktops/Tablets) */
+@media (min-width: 1200px) {
+  body {
+    font-size: 18px; /* Increase font size for larger screens */
+  }
+
+  .container {
+    max-width: 1300px; /* More space on larger screens */
+  }
+
+  header h1 {
+    font-size: 4em; /* Increase header size for desktop view */
+  }
+
+  nav ul {
+    justify-content: space-evenly; /* Space out nav items */
+  }
+
+  .project-card {
+    padding: 30px; /* Increase padding for spacious desktop view */
   }
 }
