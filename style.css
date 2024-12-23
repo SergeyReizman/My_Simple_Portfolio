@@ -17,6 +17,7 @@ html {
   --header-bg: linear-gradient(to right, var(--primary-color), var(--secondary-color)); /* Gradient for header background */
   --text-dark: #333; /* Standard dark text for readability */
   --text-light: #ffffff; /* Light text for dark backgrounds */
+  --shadow-color: rgba(0, 0, 0, 0.1); /* Consistent shadow color for UI elements */
 }
 
 body {
@@ -133,7 +134,7 @@ section p, section ul {
   margin: 10px 0;
   border-radius: 5px;
   background: #ffffff; /* White background for cards */
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  box-shadow: 0 2px 10px var(--shadow-color); /* Soft shadow for depth */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   will-change: transform, box-shadow; /* Optimize for performance during hover */
 }
@@ -169,7 +170,7 @@ footer {
   border-radius: 50px;
   font-size: 1.1em; /* Slightly larger text */
   font-family: 'Poppins', sans-serif;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  box-shadow: 0px 4px 15px var(--shadow-color); /* Soft shadow for depth */
   text-decoration: none; /* Remove underline from button */
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
