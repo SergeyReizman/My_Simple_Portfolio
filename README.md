@@ -54,11 +54,12 @@ Detects system preferences and automatically switches to a contrasting dark mode
 
 ## Technologies Used 🛠️
 
-### Frontend:
+### 🔧 Frontend:
 - **HTML5**: For semantic structure and content.
 - **CSS3**: For styling, layout, and new ocean-themed visuals.
 - **JavaScript**: For interactivity and responsiveness.
 - **Bootstrap**: For responsive design, pre-built UI components, and efficient grid systems, enabling rapid development of mobile-first, visually appealing layouts.
+- **jQuery**: For dynamic content and smooth transitions.
 
 ### Updated Design Highlights 🎨
 
