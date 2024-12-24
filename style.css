@@ -13,6 +13,8 @@ html {
   --primary-color: #0288d1; /* Ocean blue for primary actions and highlights */
   --secondary-color: #81d4fa; /* Light blue for secondary elements */
   --tertiary-color: #01579b; /* Deep ocean blue for strong accents */
+  --complementary-color: #f57c00; /* Warm orange for contrast and balance */
+  --highlight-color: #8e24aa; /* Purple for highlighting important elements */
   --background-color: #e0f7fa; /* Light ocean-inspired background */
   --header-bg: linear-gradient(to right, var(--primary-color), var(--secondary-color)); /* Gradient for header background */
   --text-dark: #333; /* Standard dark text for readability */
@@ -86,7 +88,7 @@ nav ul li a {
 nav ul li:nth-child(1) a { color: #FFEB3B; }
 nav ul li:nth-child(2) a { color: #4CAF50; }
 nav ul li:nth-child(3) a { color: #FF4081; }
-nav ul li:nth-child(4) a { color: #FF9800; }
+nav ul li:nth-child(4) a { color: var(--complementary-color); }
 
 nav ul li a:hover, a:hover {
   text-decoration: underline; /* Underline links on hover */
