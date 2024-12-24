@@ -28,10 +28,9 @@ Welcome to **My_Simple_Portfolio**, a personal website designed to showcase my s
 - Header: Gradient background transitioning from ocean blue to light blue, offering a modern visual appeal.
 
 ### Typography:
-- Font Family: Poppins for a modern and elegant appearance.
-- Font Adjustments: Sizes and weights optimized for readability and visual hierarchy.
-
-### Hover Effects: Smooth transitions applied to headings and links for interactivity.
+- **Font Family**: Poppins for a modern and elegant appearance.
+- **Font Adjustments**: Sizes and weights optimized for readability and visual hierarchy.
+- **Hover Effects**: Smooth transitions applied to headings and links for interactivity.
 
 ### Hover and Animation Effects:
 - Navigation Links: Underlined on hover with smooth transition effects.
