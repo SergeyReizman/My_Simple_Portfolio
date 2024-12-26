@@ -292,4 +292,6 @@ footer {
     }
 
     .project-card {
-        padding: var(--spacing-sm
+      padding: var(--spacing-sm);
+  }
+}
