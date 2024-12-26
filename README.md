@@ -128,10 +128,11 @@ If you'd like to explore or modify the project locally:
    git clone https://github.com/SergeyReizman/My_Simple_Portfolio.git
 2. Open the project folder and explore the codebase.
 
-## Future Features 🔮
-Blog section for updates.
-Downloadable PDF resume.
-Interactive skill progress bars.
+## Future Enhancements 🔮
+Blog section for sharing updates.
+Downloadable resume in PDF format.
+Interactive skill progress bars with real-time analytics.
+Enhanced project filtering and gallery features.
 
 ## Acknowledgements 🙌
 Special thanks to:
