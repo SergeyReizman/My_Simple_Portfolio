@@ -4,17 +4,18 @@ Welcome to **My_Simple_Portfolio**, a personal website designed to showcase my s
 
 ## Features 🚀
 
-- **Responsive Design:** Fully mobile-responsive layout that looks great on all devices.
-- **Smooth Hover Effects:** Interactive elements like buttons and links have smooth transition effects for a refined, polished feel.
-- **Project Showcase:** Easily view my featured projects with clickable links.
-- **Elegant Navigation:** Clean, simple navigation bar with intuitive layout.
-- **Floating Contact Button:** Easy access to contact information.
-- **About Section**: Learn more about my background and professional journey.
-- **Skills Section**: Explore the technologies and tools I use.
-- **Projects Section**: Check out real-world applications I’ve built and contributed to.
-- **Contact Section**: Get in touch with me directly.
-- **Enhanced Visual Design**: New ocean-inspired themes and improved readability for a polished and user-friendly experience.
-- **Interactive Section Hover Effects:** Engaging hover effects on section headings for better interactivity.
+- Responsive Design: Fully mobile-responsive layout that adapts seamlessly to all devices.
+- Smooth Hover Effects: Interactive buttons, links, and project cards with scaling and color shifts for a refined, polished feel.
+- Dynamic Testimonials Section: A newly added carousel featuring testimonials to enhance interactivity and user engagement.
+- Project Showcase: Easily view my featured projects with clickable links and detailed descriptions.
+- Elegant Navigation: A clean, simple navigation bar with improved alignment and intuitive layout.
+- Floating Contact Button: Easy access to contact information on every page.
+- About Section: Learn more about my background and professional journey.
+- Skills Section: Explore the technologies and tools I use with interactive skill progress bars.
+- Projects Section: Check out real-world applications I’ve built and contributed to.
+- Contact Section: Get in touch with me directly via email or social media links.
+- Dark Mode Support: Automatically switches to a dark theme based on system preferences.
+- Enhanced Visual Design: Ocean-inspired themes and improved readability for a polished, user-friendly experience.
 
 ## Design Updates 🎨
 
@@ -33,13 +34,16 @@ Welcome to **My_Simple_Portfolio**, a personal website designed to showcase my s
 - **Hover Effects**: Smooth transitions applied to headings and links for interactivity.
 
 ### Hover and Animation Effects:
-- Navigation Links: Underlined on hover with smooth transition effects.
-- Headings: Slight positional shifts on hover.
-- Project Cards and Buttons: Scaling and shadow effects enhance interactivity.
+- Navigation Links: Underlined and highlighted on hover with smooth transition effects.
+- Headings and Section Titles: Positional shifts and scaling on hover for better interactivity.
+- Project Cards and Buttons: Subtle shadows, scaling, and color shifts enhance interactivity.
 
 ### Footer and Navigation:
-- Footer: Styled with deep ocean blue for a consistent theme.
-- Navigation Bar: Positioned at the top, with flexbox for centered alignment of items.
+- Footer: Styled with deep ocean blue for consistency with the theme.
+- Navigation Bar: Improved layout with a flexbox-based structure for seamless navigation.
+
+### Testimonials Section:
+- A dynamic carousel with rotating testimonials for added user engagement.
 
 ### Dark Mode Support:
 - Detects system preferences and automatically switches to a contrasting dark mode.
