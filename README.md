@@ -156,6 +156,7 @@ Accessibility Advocates: For promoting inclusive web design.
 Develop a personal portfolio website to highlight my skills, showcase projects, and provide accessible contact information as a Full Stack Developer.  
 
 #### Purpose:  
+
 - Establish a professional online presence.  
 - Emphasize technical expertise and project experience.  
 - Foster communication with potential employers and collaborators. 
@@ -196,8 +197,7 @@ Develop a personal portfolio website to highlight my skills, showcase projects, 
 - Subtle hover effects on buttons, links, and project cards for improved interaction feedback.  
 - Alternating background colors to visually separate content sections.
 - Integrate CSS animations for project card reveals on scroll.
-
-- **Interactive Section Hover Effects**: Added hover effects on section headings to improve interactivity and make the sections more engaging for users.  
+- Interactive Section Hover Effects: Added hover effects on section headings to improve interactivity and make the sections more engaging for users.
 
 #### **Future Features:**  
 - Blog section for updates on learning and projects.  
