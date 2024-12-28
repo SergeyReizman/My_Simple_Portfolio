@@ -326,11 +326,12 @@ section h2:hover {
 
 /* Footer */
 footer {
-    background-color: var(--deep-ocean);
+    background-color: rgba(0, 63, 92, 0.7); /* Semi-transparent deep ocean */
     color: var(--text-light);
     text-align: center;
     padding: var(--spacing-md) 0;
     margin-top: var(--spacing-lg);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Improved text shadow for contrast */
 }
 
 /* Back to Top Button Styles */
