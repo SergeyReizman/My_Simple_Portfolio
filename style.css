@@ -326,6 +326,28 @@ footer {
     margin-top: var(--spacing-lg);
 }
 
+/* Back to Top Button Styles */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--coral-medium);
+    color: var(--text-light);
+    border: none;
+    border-radius: var(--border-radius);
+    padding: 10px 15px;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+    display: none;
+    z-index: 100;
+}
+
+.back-to-top:hover {
+    opacity: 1;
+    background-color: var(--coral-dark);
+}
+
 /* Media Queries */
 @media (max-width: 768px) {
     html {
