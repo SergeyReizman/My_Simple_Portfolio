@@ -1,3 +1,120 @@
+# 🌐 My_Simple_Portfolio  
+
+<p align="center">
+  <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5"><img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/></a>
+  <a href="https://developer.mozilla.org/en-US/docs/Web/CSS"><img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"/></a>
+  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/></a>
+  <a href="https://getbootstrap.com"><img src="https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white"/></a>
+  <a href="https://jquery.com"><img src="https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white"/></a>
+  <a href="https://react.dev"><img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black"/></a>
+  <a href="https://angular.dev"><img src="https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white"/></a>
+  <a href="https://nodejs.org"><img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white"/></a>
+  <a href="https://www.python.org"><img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/></a>
+  <a href="https://www.djangoproject.com"><img src="https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white"/></a>
+  <a href="https://flask.palletsprojects.com"><img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white"/></a>
+  <a href="https://www.mysql.com"><img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white"/></a>
+  <a href="https://www.postgresql.org"><img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white"/></a>
+  <a href="https://www.mongodb.com"><img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white"/></a>
+  <a href="https://aws.amazon.com"><img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white"/></a>
+  <a href="https://azure.microsoft.com"><img src="https://img.shields.io/badge/Microsoft%20Azure-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white"/></a>
+  <a href="https://git-scm.com"><img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white"/></a>
+  <a href="https://github.com"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/></a>
+  <a href="https://www.netlify.com"><img src="https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white"/></a>
+  <a href="https://fonts.google.com"><img src="https://img.shields.io/badge/Google%20Fonts-4285F4?style=for-the-badge&logo=googlefonts&logoColor=white"/></a>
+  <a href="https://fontawesome.com"><img src="https://img.shields.io/badge/Font%20Awesome-339AF0?style=for-the-badge&logo=fontawesome&logoColor=white"/></a>
+  <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Version-1.3-blue?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Status-Live%20✅-brightgreen?style=for-the-badge"/>
+</p>
+
+---
+
+Welcome to **My_Simple_Portfolio** — a personal website designed to showcase my work as a **Full Stack Developer**.  
+This project demonstrates my technical expertise, highlights my professional journey, and provides easy ways to connect and collaborate.  
+
+---
+
+## 🚀 Features  
+- **Responsive Design** for all devices  
+- **Interactive UI** with smooth transitions  
+- **Testimonials Carousel** with rotation  
+- **Dark Mode** (auto-detects system preference)  
+- **Accessibility First** (WCAG-compliant)  
+- **Sticky Navbar** and **smooth navigation**  
+- **Gradient Ocean Theme**
+
+---
+
+## 🎨 Design Overview  
+
+| Element | Description |
+|----------|-------------|
+| **Primary Color** | `#0288d1` |
+| **Secondary Color** | `#81d4fa` |
+| **Accent** | `#01579b` |
+| **Font** | [Poppins](https://fonts.google.com/specimen/Poppins) |
+| **Background** | `#e0f7fa` |
+| **Effects** | Smooth transitions, hover scaling |
+
+---
+
+## 🧱 Technologies  
+
+### 🔧 Frontend  
+HTML5 · CSS3 · JavaScript · Bootstrap · jQuery · React · Angular  
+
+### ⚙️ Backend  
+Node.js · Python · Django · Flask  
+
+### 🗄️ Databases  
+MySQL · PostgreSQL · MongoDB  
+
+### ☁️ Deployment  
+AWS · Azure · Netlify  
+
+### 🧰 Tools  
+Git · GitHub · Google Fonts · Font Awesome  
+
+---
+
+## 🧭 Live Demo  
+🌍 [**View My Portfolio**](https://my-simple-portfolio-sergey.netlify.app/)
+
+---
+
+## 📂 Key Sections  
+
+### 👤 About  
+Overview of my professional background.  
+
+### 💻 Skills  
+Dynamic section highlighting key technologies.  
+
+### ⚙️ Projects  
+| Project | Description | Demo / Repo |
+|----------|--------------|--------------|
+| **HooBank** | Modern React.js + Node.js banking web app | [Live](https://sergeybank.netlify.app/) |
+| **New_Library** | Flask-based library management system | [GitHub](https://github.com/SergeyReizman/New_Library) |
+| **Final_Project_V_8** | Full-stack app with clean UI | [GitHub](https://github.com/SergeyReizman/Final_Project_V_8) |
+
+### 📩 Contact  
+📧 [sergeytlv1971@gmail.com](mailto:sergeytlv1971@gmail.com)  
+💻 [GitHub Profile](https://github.com/SergeyReizman)
+
+---
+
+## 💡 Getting Started  
+
+```bash
+git clone https://github.com/SergeyReizman/My_Simple_Portfolio.git
+cd My_Simple_Portfolio
+
+
+
+
+
+
+
 # My_Simple_Portfolio 🌐
 
 Welcome to **My_Simple_Portfolio**, a personal website designed to showcase my skills and projects as a Full Stack Developer. This project highlights my expertise, provides insights into my journey, and enables easy interaction for collaborators and clients.
