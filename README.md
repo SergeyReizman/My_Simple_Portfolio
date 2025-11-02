@@ -85,7 +85,11 @@ Git · GitHub · Google Fonts · Font Awesome
 ## 📂 Key Sections  
 
 ### 👤 About  
-Overview of my professional background.  
+💡 Full Stack Developer 🧑‍💻 | I build scalable, user-friendly web apps 🌐 blending performance, design & innovation.
+🚀 From modern banking platforms 🏦 to custom portfolios 🧾, I deliver clean, impactful code 🧼🧠.
+⚡ Expert in Python, Django, Flask, React & Node.js, with a proven track record in optimizing legacy systems & automating CI/CD.
+🌍 Portfolio: my-simple-portfolio-sergey.netlify.app
+ ☕  
 
 ### 💻 Skills  
 Dynamic section highlighting key technologies.  
