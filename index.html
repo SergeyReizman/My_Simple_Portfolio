@@ -5,11 +5,571 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sergey Reizman | Full Stack Developer</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome 6 (free) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/YOUR_FONT_AWESOME_KIT.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* reset & base */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f9fafc;
+            scroll-behavior: smooth;
+            transition: background-color 0.25s ease, color 0.2s ease;
+        }
+
+        /* dark mode class (applied to body) */
+        body.dark-mode {
+            background: #121212;
+            color: #e0e0e0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* header */
+        header {
+            background: linear-gradient(135deg, #1e2b4f, #2c3e6e);
+            color: white;
+            padding: 3rem 0 2rem;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: background 0.25s ease;
+        }
+
+        /* dark mode header adjustment (keep gradient but deeper) */
+        body.dark-mode header {
+            background: linear-gradient(135deg, #0f172a, #1a263b);
+        }
+
+        header h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+
+        header p {
+            font-size: 1.3rem;
+            opacity: 0.9;
+            font-weight: 400;
+        }
+
+        /* navigation */
+        nav {
+            background: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            transition: background-color 0.2s ease, box-shadow 0.2s;
+        }
+
+        body.dark-mode nav {
+            background: #1e1e1e;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+            gap: 2.5rem;
+            padding: 1rem 0;
+            position: relative;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #1e2b4f;
+            font-weight: 600;
+            transition: color 0.2s;
+            font-size: 1.1rem;
+        }
+
+        body.dark-mode nav a {
+            color: #cfcfcf;
+        }
+
+        nav a:hover {
+            color: #3b6e9c;
+        }
+
+        body.dark-mode nav a:hover {
+            color: #7aa9d9;
+        }
+
+        /* ---- SUN/MOON TOGGLE BUTTON (inside nav, rightmost) ---- */
+        .theme-toggle {
+            background: none;
+            border: none;
+            font-size: 1.7rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            color: #1e2b4f;
+            transition: background 0.2s, transform 0.2s, color 0.2s;
+            margin-left: 0.2rem;
+            line-height: 1;
+        }
+
+        body.dark-mode .theme-toggle {
+            color: #ffdb9d;
+            /* warm sun color */
+        }
+
+        .theme-toggle:hover {
+            background: rgba(0, 0, 0, 0.05);
+            transform: scale(1.05);
+        }
+
+        body.dark-mode .theme-toggle:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        /* keep nav items + toggle nicely aligned */
+        nav li:last-child {
+            display: flex;
+            align-items: center;
+        }
+
+        /* sections */
+        section {
+            padding: 4rem 0;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        body.dark-mode section {
+            border-bottom-color: #2a2a2a;
+        }
+
+        h2 {
+            font-size: 2.2rem;
+            margin-bottom: 2rem;
+            color: #1e2b4f;
+            position: relative;
+            display: inline-block;
+        }
+
+        body.dark-mode h2 {
+            color: #b0c4de;
+        }
+
+        h2:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            width: 70px;
+            height: 4px;
+            background: #3b6e9c;
+            border-radius: 4px;
+        }
+
+        body.dark-mode h2:after {
+            background: #5f9ea0;
+        }
+
+        /* about */
+        #about p {
+            font-size: 1.2rem;
+            background: white;
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.02);
+            border: 1px solid rgba(0, 0, 0, 0.03);
+            transition: background 0.2s, border-color 0.2s, color 0.2s;
+        }
+
+        body.dark-mode #about p {
+            background: #1e1e1e;
+            border-color: #333;
+            color: #ddd;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        /* skills grid */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 1.5rem;
+        }
+
+        .skill {
+            background: white;
+            padding: 1.8rem 1.5rem;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.02);
+            border: 1px solid #edf2f7;
+            transition: transform 0.2s, background 0.2s, border 0.2s;
+        }
+
+        body.dark-mode .skill {
+            background: #1a1a1a;
+            border-color: #2d2d2d;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .skill:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05);
+        }
+
+        body.dark-mode .skill:hover {
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.8);
+        }
+
+        .skill h3 {
+            color: #2c3e6e;
+            margin-bottom: 1rem;
+            font-size: 1.4rem;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 0.5rem;
+        }
+
+        body.dark-mode .skill h3 {
+            color: #9bb8d4;
+            border-bottom-color: #3a3a3a;
+        }
+
+        .skill ul {
+            list-style: none;
+        }
+
+        .skill li {
+            padding: 0.4rem 0;
+            font-weight: 400;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .skill li::before {
+            content: "▹";
+            color: #3b6e9c;
+            font-weight: bold;
+        }
+
+        body.dark-mode .skill li::before {
+            color: #79b8d1;
+        }
+
+        /* projects grid */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2.5rem 0 1rem;
+        }
+
+        .project-card {
+            background: white;
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.05);
+            transition: all 0.25s;
+            border: 1px solid #edf2f7;
+            display: flex;
+            flex-direction: column;
+        }
+
+        body.dark-mode .project-card {
+            background: #1a1a1a;
+            border-color: #2a2a2a;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+        }
+
+        .project-card:hover {
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            transform: scale(1.01);
+        }
+
+        body.dark-mode .project-card:hover {
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7);
+        }
+
+        .project-image {
+            width: 100%;
+            height: 190px;
+            object-fit: cover;
+            background: #d9e2ec;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        body.dark-mode .project-image {
+            background: #2c2c2c;
+            border-bottom-color: #333;
+        }
+
+        .project-card h3 {
+            font-size: 1.6rem;
+            margin: 1.2rem 1.2rem 0.5rem;
+            color: #1e2b4f;
+        }
+
+        body.dark-mode .project-card h3 {
+            color: #b8d0e0;
+        }
+
+        .project-card p {
+            margin: 0 1.2rem 1rem;
+            color: #4a5568;
+            font-size: 0.95rem;
+        }
+
+        body.dark-mode .project-card p {
+            color: #b0b0b0;
+        }
+
+        .project-card p strong {
+            color: #2c3e6e;
+        }
+
+        body.dark-mode .project-card p strong {
+            color: #9bb8d4;
+        }
+
+        .project-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin: 0.5rem 1.2rem 1.5rem;
+        }
+
+        .project-link {
+            background: #f0f4fa;
+            color: #1e2b4f;
+            padding: 0.5rem 1.2rem;
+            border-radius: 40px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            transition: background 0.2s;
+            border: 1px solid transparent;
+        }
+
+        body.dark-mode .project-link {
+            background: #2a2a2a;
+            color: #ccc;
+            border-color: #3d3d3d;
+        }
+
+        .project-link:hover {
+            background: #dbe7f3;
+            border-color: #bdd0e6;
+        }
+
+        body.dark-mode .project-link:hover {
+            background: #3a3a3a;
+            border-color: #5f7a9a;
+        }
+
+        .project-link i {
+            font-size: 0.9rem;
+        }
+
+        /* extra metadata inside card (Feb 2026) */
+        .project-card div[style*="border-top"] {
+            transition: border-color 0.2s, color 0.2s;
+        }
+
+        body.dark-mode .project-card div[style*="border-top"] {
+            border-top-color: #333 !important;
+            color: #9a9a9a !important;
+        }
+
+        /* contact */
+        #contact {
+            text-align: center;
+            background: white;
+            border-radius: 40px 40px 0 0;
+            margin-top: 2rem;
+            transition: background 0.2s;
+        }
+
+        body.dark-mode #contact {
+            background: #161616;
+        }
+
+        .contact-info {
+            margin: 2rem 0;
+            font-size: 1.2rem;
+        }
+
+        .contact-info a {
+            color: #1e2b4f;
+            text-decoration: none;
+            margin: 0 1rem;
+            transition: color 0.2s;
+            display: inline-block;
+            padding: 0.3rem 0;
+        }
+
+        body.dark-mode .contact-info a {
+            color: #bbbbbb;
+        }
+
+        .contact-info a:hover {
+            color: #3b6e9c;
+        }
+
+        body.dark-mode .contact-info a:hover {
+            color: #7aa9d9;
+        }
+
+        .contact-info i {
+            margin-right: 8px;
+            width: 1.2rem;
+        }
+
+        .contact-button {
+            background: #1e2b4f;
+            color: white;
+            border: none;
+            padding: 1rem 2.5rem;
+            font-size: 1.2rem;
+            border-radius: 60px;
+            cursor: pointer;
+            font-weight: 600;
+            box-shadow: 0 8px 18px rgba(0, 40, 80, 0.2);
+            transition: background 0.2s, transform 0.1s;
+            display: inline-block;
+            text-decoration: none;
+            margin: 1rem 0 2rem;
+        }
+
+        body.dark-mode .contact-button {
+            background: #2c3e6e;
+            box-shadow: 0 8px 18px rgba(0, 0, 0, 0.5);
+        }
+
+        .contact-button:hover {
+            background: #2c3e6e;
+            transform: scale(1.02);
+        }
+
+        body.dark-mode .contact-button:hover {
+            background: #3b5580;
+        }
+
+        /* footer */
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #718096;
+            border-top: 1px solid #e2e8f0;
+            background: white;
+            transition: background 0.2s, border-color 0.2s, color 0.2s;
+        }
+
+        body.dark-mode footer {
+            background: #161616;
+            border-top-color: #2a2a2a;
+            color: #8a8a8a;
+        }
+
+        /* floating buttons */
+        .button-container {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            display: flex;
+            gap: 0.8rem;
+            z-index: 99;
+        }
+
+        .transparent-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 52px;
+            height: 52px;
+            background: white;
+            border-radius: 50%;
+            box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+            transition: transform 0.2s, box-shadow 0.2s;
+            border: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        body.dark-mode .transparent-button {
+            background: #2a2a2a;
+            border-color: #404040;
+            box-shadow: 0 8px 18px rgba(0, 0, 0, 0.7);
+        }
+
+        .transparent-button:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2);
+        }
+
+        body.dark-mode .transparent-button:hover {
+            box-shadow: 0 14px 24px rgba(0, 0, 0, 0.9);
+        }
+
+        .transparent-button.github {
+            background: #24292e;
+        }
+
+        body.dark-mode .transparent-button.github {
+            background: #0d1117;
+        }
+
+        .transparent-button.github svg {
+            fill: white;
+        }
+
+        /* responsive */
+        @media (max-width: 700px) {
+            header h1 {
+                font-size: 2.2rem;
+            }
+
+            nav ul {
+                gap: 1.2rem;
+                flex-wrap: wrap;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .button-container {
+                bottom: 1rem;
+                right: 1rem;
+            }
+
+            .contact-info a {
+                display: block;
+                margin: 0.5rem 0;
+            }
+
+            .theme-toggle {
+                font-size: 1.5rem;
+                width: 38px;
+                height: 38px;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -21,18 +581,25 @@
         </div>
     </header>
 
-    <!-- Navigation Section -->
+    <!-- Navigation Section (with added sun/moon toggle) -->
     <nav>
         <ul class="container">
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
+            <!-- SUN/MOON TOGGLE BUTTON (looks like sun/moon) -->
+            <li>
+                <button class="theme-toggle" id="themeToggle" aria-label="Switch dark/light mode">
+                    <i class="fas fa-sun"></i> <!-- sun icon (light mode default) -->
+                </button>
+            </li>
         </ul>
     </nav>
 
-    <!-- About Section -->
+    <!-- Main Content -->
     <main>
+        <!-- About Section -->
         <section id="about" class="container">
             <h2>About Me</h2>
             <p>Hi! I'm Sergey Reizman, a 💡 Full Stack Developer 🧑‍💻 | I build scalable,
@@ -90,53 +657,86 @@
             </div>
         </section>
 
-        <!-- Projects Section -->
+        <!-- Projects Section (including SVG Design Processor) -->
         <section id="projects" class="container">
             <h2>Projects</h2>
             <div class="projects-grid">
 
+                <!-- SVG Design Processor (NEW, placed first as requested) -->
+                <div class="project-card">
+                    <!-- points to /svg-processor.png in root (MY_SIMPLE_PORTFOLIO directory) -->
+                    <img src="svg-processor.png" alt="SVG Design Processor Screenshot" class="project-image"
+                        onerror="this.src='https://via.placeholder.com/400x200?text=SVG+Processor'">
+                    <h3>🎨 SVG Design Processor</h3>
+                    <p>A full-stack app that uploads SVG rectangles, processes them on the backend, stores data in
+                        MongoDB, and visualizes via Canvas. Built with React, Node.js, Express, TypeScript.</p>
+                    <p><strong>Tech Stack:</strong> React · Node.js · Express · TypeScript · MongoDB</p>
+                    <div class="project-links">
+                        <a href="https://svg-processor-mm7q.vercel.app/" target="_blank" class="project-link"><i
+                                class="fas fa-external-link-alt"></i> Live Demo</a>
+                        <a href="https://svg-processor-peach.vercel.app/" target="_blank" class="project-link"><i
+                                class="fas fa-cloud"></i> Backend API</a>
+                        <a href="https://svg-processor-peach.vercel.app/api/test" target="_blank"
+                            class="project-link"><i class="fas fa-heartbeat"></i> Health Check</a>
+                        <a href="https://github.com/SergeyReizman/svg-processor" target="_blank" class="project-link"><i
+                                class="fab fa-github"></i> GitHub</a>
+                        <a href="https://svg-processor-docs.netlify.app/" target="_blank" class="project-link"><i
+                                class="fas fa-file-alt"></i> Spec</a>
+                    </div>
+                    <!-- additional inline metadata (optional) -->
+                    <div
+                        style="margin:0 1.2rem 1rem; font-size:0.85rem; color:#2b4f6e; border-top:1px dashed #cbd5e0; padding-top:0.8rem;">
+                        <i class="far fa-calendar-alt"></i> Feb 2026 · Full-stack best practices
+                    </div>
+                </div>
+
                 <!-- HooBank Project -->
                 <div class="project-card">
-                    <img src="hoobank-screenshot.png" alt="HooBank Screenshot" class="project-image">
+                    <img src="hoobank-screenshot.png" alt="HooBank Screenshot" class="project-image"
+                        onerror="this.src='https://via.placeholder.com/400x200?text=HooBank'">
                     <h3>HooBank</h3>
-                    <p>HooBank is a modern banking web application built with React.js and Node.js. It provides a
-                        seamless and secure banking experience with features like user authentication, transaction
-                        management, and account summaries.</p>
+                    <p>Modern banking web application with secure authentication, transaction management, and account
+                        summaries. Built with React and Node.js.</p>
                     <p><strong>Tech Stack:</strong> React.js, Node.js, Python</p>
-                    <a href="https://sergeybank.netlify.app/" target="_blank" class="project-link">🌍 View Project</a>
-                    <a href="https://github.com/SergeyReizman/Final_Project_V_8" target="_blank" class="project-link">💻
-                        GitHub Repository</a>
+                    <div class="project-links">
+                        <a href="https://sergeybank.netlify.app/" target="_blank" class="project-link"><i
+                                class="fas fa-external-link-alt"></i> View Project</a>
+                        <a href="https://github.com/SergeyReizman/Final_Project_V_8" target="_blank"
+                            class="project-link"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
                 </div>
 
                 <!-- New_Library Project -->
                 <div class="project-card">
-                    <img src="new-library-screenshot.png" alt="New Library Screenshot" class="project-image">
+                    <img src="new-library-screenshot.png" alt="New Library Screenshot" class="project-image"
+                        onerror="this.src='https://via.placeholder.com/400x200?text=Library+Management'">
                     <h3>New_Library</h3>
-                    <p>A robust Library Management System developed using Python, Flask, and SQLite. It simplifies
-                        library operations with features for managing books, patrons, and borrowing/returning processes.
-                        Includes RESTful API endpoints for external integrations.</p>
+                    <p>Library Management System using Flask and SQLite. Manage books, patrons, borrowing, and RESTful
+                        API for integrations.</p>
                     <p><strong>Tech Stack:</strong> Python, Flask, SQLite</p>
-                    <!-- Live Demo Link -->
-                    <a href="https://new-library-system.netlify.app/" target="_blank" class="project-link">🌍 Live
-                        Demo</a>
-                    <a href="https://github.com/SergeyReizman/New_Library" target="_blank" class="project-link">💻
-                        GitHub Repository</a>
-
+                    <div class="project-links">
+                        <a href="https://new-library-system.netlify.app/" target="_blank" class="project-link"><i
+                                class="fas fa-external-link-alt"></i> Live Demo</a>
+                        <a href="https://github.com/SergeyReizman/New_Library" target="_blank" class="project-link"><i
+                                class="fab fa-github"></i> GitHub</a>
+                    </div>
                 </div>
 
                 <!-- Interactive Calendar Project -->
                 <div class="project-card">
                     <img src="interactive-calendar-screenshot.png" alt="Interactive Calendar Screenshot"
-                        class="project-image">
+                        class="project-image"
+                        onerror="this.src='https://via.placeholder.com/400x200?text=Interactive+Calendar'">
                     <h3>Interactive Calendar</h3>
-                    <p>An engaging, user-friendly calendar application that allows users to view monthly calendars,
-                        navigate between years, and add or edit events/reminders for specific dates. Includes a serene,
-                        ocean-inspired theme and responsive design.</p>
+                    <p>Ocean-themed calendar with year navigation, events/reminders, and responsive design. Built with
+                        vanilla JS.</p>
                     <p><strong>Tech Stack:</strong> HTML5, CSS3, JavaScript</p>
-                    <a href="https://interactive-calendar-any-year.netlify.app/" target="_blank" class="project-link">🌍
-                        Live Site</a>
-                    <a href="https://github.com/SergeyReizman/Interactive-Calendar-Any-Year.git" target="_blank"
-                        class="project-link">💻 GitHub Repository</a>
+                    <div class="project-links">
+                        <a href="https://interactive-calendar-any-year.netlify.app/" target="_blank"
+                            class="project-link"><i class="fas fa-external-link-alt"></i> Live Site</a>
+                        <a href="https://github.com/SergeyReizman/Interactive-Calendar-Any-Year.git" target="_blank"
+                            class="project-link"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
                 </div>
 
             </div>
@@ -147,7 +747,7 @@
             <h2>Contact</h2>
             <p>Let's connect!</p>
             <div class="contact-info">
-                <a href="mailto:sergeytlv1971@gmail.com"><i class="fas fa-envelope"></i> sergeytlv1971@gmail.com</a><br>
+                <a href="mailto:sergeytlv1971@gmail.com"><i class="fas fa-envelope"></i> sergeytlv1971@gmail.com</a>
                 <a href="https://github.com/SergeyReizman" target="_blank"><i class="fab fa-github"></i>
                     SergeyReizman</a>
             </div>
@@ -155,14 +755,15 @@
         </section>
     </main>
 
-    <!-- Footer Section -->
+    <!-- Footer -->
     <footer>
         <p>Developed by Sergey Reizman - © 2025</p>
     </footer>
 
-    <!-- External Links -->
+    <!-- Floating social / external links (LinkedIn + GitHub) -->
     <div class="button-container">
-        <a href="https://www.linkedin.com/in/sergey-reizman" target="_blank" class="transparent-button">
+        <a href="https://www.linkedin.com/in/sergey-reizman" target="_blank" class="transparent-button"
+            aria-label="LinkedIn">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#0077B5" role="img"
                 aria-label="LinkedIn">
                 <rect width="24" height="24" rx="4" fill="#0077B5"></rect>
@@ -171,18 +772,66 @@
                     fill="white"></path>
             </svg>
         </a>
-        <a href="https://github.com/SergeyReizman/Sergey_Reizman" target="_blank" class="transparent-button github">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="black" role="img"
+        <a href="https://github.com/SergeyReizman/Sergey_Reizman" target="_blank" class="transparent-button github"
+            aria-label="GitHub">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white" role="img"
                 aria-label="GitHub">
                 <path
                     d="M12 0.297C5.373 0.297 0 5.667 0 12.287C0 17.356 3.438 21.656 8.207 23.261C8.807 23.363 9.027 23.027 9.027 22.733C9.027 22.471 9.016 21.771 9.011 20.884C5.672 21.598 4.967 19.417 4.967 19.417C4.455 18.08 3.74 17.699 3.74 17.699C2.671 16.998 3.824 17.014 3.824 17.014C5.004 17.096 5.634 18.235 5.634 18.235C6.683 19.998 8.45 19.51 9.131 19.217C9.239 18.53 9.519 18.065 9.829 17.792C7.157 17.508 4.344 16.449 4.344 11.787C4.344 10.436 4.812 9.322 5.596 8.448C5.472 8.163 5.077 6.945 5.708 5.34C5.708 5.34 6.72 5.036 8.983 6.717C9.929 6.437 10.936 6.297 11.943 6.29C12.95 6.297 13.958 6.437 14.905 6.717C17.168 5.036 18.179 5.34 18.179 5.34C18.811 6.945 18.416 8.163 18.292 8.448C19.076 9.322 19.543 10.436 19.543 11.787C19.543 16.464 16.717 17.503 14.036 17.785C14.456 18.133 14.836 18.816 14.836 19.84C14.836 21.312 14.824 22.424 14.824 22.733C14.824 23.029 15.043 23.369 15.652 23.257C20.452 21.646 23.912 17.353 23.912 12.287C23.912 5.667 18.535 0.297 12 0.297Z">
                 </path>
             </svg>
         </a>
-
     </div>
 
-    <script src="script.js"></script>
+    <!-- Dark mode toggle script: sun/moon switch, preserves all other content -->
+    <script>
+        (function () {
+            const toggleBtn = document.getElementById('themeToggle');
+            const icon = toggleBtn.querySelector('i');
+            const body = document.body;
+
+            // Function to toggle theme
+            function toggleTheme() {
+                body.classList.toggle('dark-mode');
+
+                // swap icon: sun <-> moon
+                if (body.classList.contains('dark-mode')) {
+                    icon.className = 'fas fa-moon';      // moon when dark
+                } else {
+                    icon.className = 'fas fa-sun';       // sun when light
+                }
+
+                // (optional) save preference in localStorage
+                try {
+                    if (body.classList.contains('dark-mode')) {
+                        localStorage.setItem('sergeyTheme', 'dark');
+                    } else {
+                        localStorage.setItem('sergeyTheme', 'light');
+                    }
+                } catch (e) { }
+            }
+
+            // event listener
+            toggleBtn.addEventListener('click', toggleTheme);
+
+            // check localStorage for persistent theme (optional, but nice)
+            try {
+                const savedTheme = localStorage.getItem('sergeyTheme');
+                if (savedTheme === 'dark') {
+                    // but if body already has no dark-mode, apply
+                    if (!body.classList.contains('dark-mode')) {
+                        body.classList.add('dark-mode');
+                        icon.className = 'fas fa-moon';
+                    }
+                } else if (savedTheme === 'light') {
+                    if (body.classList.contains('dark-mode')) {
+                        body.classList.remove('dark-mode');
+                        icon.className = 'fas fa-sun';
+                    }
+                }
+            } catch (e) { }
+        })();
+    </script>
 </body>
 
 </html>
